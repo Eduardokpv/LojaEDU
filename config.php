@@ -1,32 +1,31 @@
 <?php
+    require 'environment.php';
 
-require 'environment.php';
+    global $config;
+    global $db;
 
-global $config;
-global $db;
+    $config = array();
 
-$config = array();
+    if(ENVIRONMENT == 'development'){
+        define("BASE_URL","http://localhost/LojaEDU/");
+        $config['dbname'] = 'loja';
+        $config['host'] = 'localhost';
+        $config['dbuser'] = 'root';
+        $config['dbpass'] = '';
+    }
 
-if(ENVIRONMENT == 'development')
-{
-    define("BASE_URL","http://localhost/LojaEDU/");
-    $config['dbname'] = 'loja';
-    $config['host'] = 'localhost';
-    $config['dbuser'] = 'root';
-    $config['dbpass'] = '';
-}
-else
-{
-    define("BASE_URL","");
-    $config['dbname'] = '';
-    $config['host'] = '';
-    $config['dbuser'] = '';
-    $config['dbpass'] = '';
-}
-$config['default_lang'] = 'pt-br';
+    else{
+        define("BASE_URL","");
+        $config['dbname'] = '';
+        $config['host'] = '';
+        $config['dbuser'] = '';
+        $config['dbpass'] = '';
+    }
 
-$db = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'],$config['dbuser'],$config['dbpass']);
-   
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $config['default_lang'] = 'pt-br';
+
+    $db = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'],$config['dbuser'],$config['dbpass']);
+
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 ?>

@@ -1,1 +1,3 @@
-Conteúdo da página principal
+<?php
+    print_r($list);
+?>
