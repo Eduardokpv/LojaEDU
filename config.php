@@ -8,7 +8,7 @@
 
     if(ENVIRONMENT == 'development'){
         define("BASE_URL","http://localhost/LojaEDU/");
-        $config['dbname'] = 'loja';
+        $config['dbname'] = 'edudb';
         $config['host'] = 'localhost';
         $config['dbuser'] = 'root';
         $config['dbpass'] = '';
