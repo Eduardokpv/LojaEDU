@@ -9,8 +9,29 @@
 
             if($sql->rowCount() > 0){
                 $array = $sql->fetchAll();
+                
+                //buscar img
+                foreach($array as $key => $item){
+                    $array[$key]['images'] = $this->getImagesByProductId($item['id']);
+                }
+                
+                return $array;
             }
-            return $array;
+            
+            public function getImagesByProductId($id){
+                $array = array();
+                $sql = "SELECT url FROM products_images WHERE id_product = :id";
+                $sql = $this->db->prepare($sql);
+                $sql->bindValue(":id", $id);
+                $sql->execute();
+                
+                //verificação
+                if($sql->rowCount() > 0){
+                    $array = $sql->fetchAll();
+                }
+                
+                return $array;
+            }
         }
     }
 ?>
