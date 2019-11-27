@@ -23,7 +23,7 @@ body {
 .topnav .nav > li > a:hover,
 .dropdown.open .dropdown-toggle {
     background: none;
-    color: #59b210;
+    color: #cf4040;
 }
 
 header {
@@ -63,7 +63,7 @@ header {
 }
 
 .head_email span {
-    color: #59b210;
+    color: #cf4040;
 }
 
 .search_area {
@@ -103,7 +103,7 @@ header {
     width: 15%;
     height: 44px;
     float: left;
-    background-color: #59b210;
+    background-color: #cf4040;
     background-image: url('../images/search.png');
     background-size: auto 50%;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ header {
 }
 
 .carttotal span {
-    color: #59b210;
+    color: #cf4040;
     font-size: 20px;
     font-weight: bold;
 }
@@ -147,7 +147,7 @@ header {
     color: #FFF;
     font-weight: bold;
     font-size: 12px;
-    background-color: #59b210;
+    background-color: #cf4040;
     border-radius: 10px;
 }
 
@@ -178,7 +178,7 @@ header {
 }
 
 .categoryarea .dropdown {
-    background-color: #59b210;
+    background-color: #cf4040;
     border-radius: 5px;
 }
 
@@ -195,7 +195,7 @@ header {
 
 .categoryarea .nav > li.dropdown > a:focus,
 .categoryarea .nav > li.dropdown > a:hover {
-    background-color: #59b210;
+    background-color: #cf4040;
     border-radius: 5px;
 }
 
@@ -281,11 +281,11 @@ footer {
     border-radius: 0 5px 5px 0;
     margin-left: -5px;
     color: #FFF;
-    background-color: #59b210;
+    background-color: #cf4040;
 }
 
 .subarea input[type=submit]:hover {
-    background-color: #60c011;
+    background-color: #ff9e42;
 }
 
 footer h3 {
@@ -305,7 +305,7 @@ footer h3 {
 }
 
 .linkgroups a:hover {
-    color: #59b210;
+    color: #cf4040;
 }
 
 .linkgroups ul,
@@ -353,7 +353,7 @@ footer h3 {
 
 .product_name {
     font-weight: bold;
-    color: #0000FF;
+    color: #4169E1;
 }
 
 .product_brand {
@@ -397,13 +397,13 @@ footer h3 {
 }
 
 .product_tag_red {
-    background-color: #FF0000;
+    background-color: #cf4040;
 }
 
 .product_tag_green {
-    background-color: #00FF00;
+    background-color: #7CFC00;
 }
 
 .product_tag_blue {
-    background-color: #0000FF;
+    background-color: #4169E1;
 }

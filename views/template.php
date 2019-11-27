@@ -198,7 +198,7 @@
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">© <span>Loja 2.0</span> - <?php $this->lang->get('ALLRIGHTRESERVED'); ?>.</div>
+                    <div class="col-sm-6">© <span>LojaEDU</span> - <?php $this->lang->get('ALLRIGHTRESERVED'); ?>.</div>
                     <div class="col-sm-6">
                         <div class="payments">
                             <img src="<?php echo BASE_URL; ?>assets/images/visa.png" />
